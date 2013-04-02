@@ -21,6 +21,8 @@ var file = await picker.PickSingleFileAsync();
 var stream = await file.OpenAsync(FileAccessMode.Read);
 var jpegInfo = ExifReader.ReadJpeg(stream.AsStream());
 
+```
+
 
 
 
