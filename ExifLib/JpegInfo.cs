@@ -7,119 +7,265 @@ namespace ExifLib
         /// <summary>
         /// The Jpeg file name (excluding path).
         /// </summary>
-        public string FileName;
+        public string FileName
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// The Jpeg file size, in bytes.
         /// </summary>
-        public int FileSize;
+        public int FileSize
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// True if the provided Stream was detected to be a Jpeg image, False otherwise.
         /// </summary>
-        public bool IsValid;
+        public bool IsValid
+        {
+            get;
+            set;
+        }
 
         /// <summary>
-        /// Image dimensions, in pixels.
+        /// Image height in pixels.
         /// </summary>
-        public int Width, Height;
+        public int Height
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Image width in pixels.
+        /// </summary>
+        public int Width
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// True if the image data is expressed in 3 components (RGB), False otherwise.
         /// </summary>
-        public bool IsColor;
+        public bool IsColor
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Orientation of the image.
         /// </summary>
-        public ExifOrientation Orientation;
+        public ExifOrientation Orientation
+        {
+            get;
+            set;
+        }
+
         /// <summary>
-        /// The X and Y resolutions of the image, expressed in ResolutionUnit.
+        /// The X resolution of the image, expressed in ResolutionUnit.
         /// </summary>
-        public double XResolution, YResolution;
+        public double XResolution
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// The Y resolution of the image, expressed in ResolutionUnit.
+        /// </summary>
+        public double YResolution
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Resolution unit of the image.
         /// </summary>
-        public ExifUnit ResolutionUnit;
+        public ExifUnit ResolutionUnit
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Date at which the image was taken.
         /// </summary>
-        public string DateTime;
+        public string DateTime
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Date at which the image was taken. Created by Lumia devices.
         /// </summary>
-        public string DateTimeOriginal;
+        public string DateTimeOriginal
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Description of the image.
         /// </summary>
-        public string Description;
+        public string Description
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Camera manufacturer.
         /// </summary>
-        public string Make;
+        public string Make
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Camera model.
         /// </summary>
-        public string Model;
+        public string Model
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Software used to create the image.
         /// </summary>
-        public string Software;
+        public string Software
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Image artist.
         /// </summary>
-        public string Artist;
+        public string Artist
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Image copyright.
         /// </summary>
-        public string Copyright;
+        public string Copyright
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Image user comments.
         /// </summary>
-        public string UserComment;
+        public string UserComment
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Exposure time, in seconds.
         /// </summary>
-        public double ExposureTime;
+        public double ExposureTime
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// F-number (F-stop) of the camera lens when the image was taken.
         /// </summary>
-        public double FNumber;
+        public double FNumber
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Flash settings of the camera when the image was taken.
         /// </summary>
-        public ExifFlash Flash;
+        public ExifFlash Flash
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// GPS latitude reference (North, South).
         /// </summary>
-        public ExifGpsLatitudeRef GpsLatitudeRef;
+        public ExifGpsLatitudeRef GpsLatitudeRef
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// GPS latitude (degrees, minutes, seconds).
         /// </summary>
         public double[] GpsLatitude = new double[3];
+
         /// <summary>
         /// GPS longitude reference (East, West).
         /// </summary>
-        public ExifGpsLongitudeRef GpsLongitudeRef;
+        public ExifGpsLongitudeRef GpsLongitudeRef
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// GPS longitude (degrees, minutes, seconds).
         /// </summary>
         public double[] GpsLongitude = new double[3];
 
         /// <summary>
-        /// Byte offset and size of the thumbnail data within the Exif section of the image file.
+        /// Byte offset of the thumbnail data within the Exif section of the image file.
         /// Used internally.
         /// </summary>
-        public int ThumbnailOffset, ThumbnailSize;
+        public int ThumbnailOffset
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Byte size of the thumbnail data within the Exif section of the image file.
+        /// Used internally.
+        /// </summary>
+        public int ThumbnailSize
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Thumbnail data found in the Exif section.
         /// </summary>
-        public byte[] ThumbnailData;
+        public byte[] ThumbnailData
+        {
+            get;
+            set;
+        }
         
         /// <summary>
         /// Time taken to load the image information.
         /// </summary>
-        public TimeSpan LoadTime;
+        public TimeSpan LoadTime
+        {
+            get;
+            set;
+        }
     }
 }
