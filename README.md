@@ -23,6 +23,24 @@ var jpegInfo = ExifReader.ReadJpeg(stream.AsStream());
 
 ```
 
+##### Windows Phone 8
+
+```csharp
+
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+  var task = new PhotoChooserTask();
+  task.Completed += task_Completed;
+  task.Show();
+}
+
+void task_Completed(object sender, PhotoResult e)
+{
+  var jpeginfo = ExifReader.ReadJpeg(e.ChosenPhoto);
+  this.DataContext = jpeginfo;
+}
+
+```
 
 
 
