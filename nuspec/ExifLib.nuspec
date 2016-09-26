@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>ExifLib.PCL</id>
+        <version>1.0.2</version>
+        <title>ExifLib.PCL</title>
+        <authors>Shawn Anderson</authors>
+        <owners>Shawn Anderson</owners>
+        <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+        <projectUrl>https://github.com/ravensorb/portable-exif-lib</projectUrl>
+        <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Portable EXIF library for Windows 8, Windows Phone, Silverlight, Android, and iOS.
+
+      Based completely on ExifLib - A Fast Exif Data Extractor for .NET 2.0+ created by Simon McKenzie and released on Code Project under Code Project Open License.
+
+      Modified to take a stream in constructor and created as a portable library so it can easily be used in Windows Phone, Windows 8, Silverlight, Android, and iOS projects (like Xamarin).</description>
+        <summary>Portable EXIF library for Windows 8, Windows Phone 8.1, Android, and iOS.</summary>
+        <releaseNotes>Updated to .netstandard 1.0</releaseNotes>
+        <copyright>Copyright 2014</copyright>
+        <language>en-US</language>
+        <tags>Exif,Xamarin</tags>
+    </metadata>
+    <files>
+        <file src="..\source\ExifLib\bin\$Configuration$\ExifLib.dll" target="lib\netstandard1.0" />
+        <file src="..\source\ExifLib\bin\$Configuration$\ExifLib.pdb" target="lib\netstandard1.0" />
+    </files>
+</package>

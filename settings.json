@@ -1,0 +1,35 @@
+{
+	"version": {
+		"VersionFile": "./version.json",
+		"AssemblyInfoFile": "./source/ExifLib/Properties/AssemblyInfo.cs",
+		"LoadFrom": "versionfile",
+		"AutoIncrementVersion": false,
+	},
+	"build": {
+		"SourcePath": "./source",
+		"SolutionFileSpec": "./source/*.sln",
+		"TreatWarningsAsErrors": false,
+		"EnableXamarinIOS": false,
+		"MacAgentIPAddress": "",
+		"MacAgentUserName": "",
+		"MacAgentUserPassword": ""
+	},
+	"test": {
+		"SourcePath": "./tests",
+		"ResultsPath": "./artifacts",
+		"AssemblyFileSpec": "*.UnitTests.dll",
+		"Framework": "NUnit3"
+	},
+	"nuget": {
+		"NuGetConfig": "./.nuget/NuGet.config",
+		"FeedUrl": "https://www.nuget.org",
+		"FeedAPIKey": "",
+		"ArtifactsPath": "./artifacts/packages",
+		"NuspecPath": "./nuspec",
+		"UpdateVersion": true,
+		"UpdateLibraryDependencies": false,
+		"VersionDependencyForLibrary": "greaterthanorequal",
+		"LibraryNamespaceBase": "",
+		"LibraryMinVersionDependency": ""
+	}
+}

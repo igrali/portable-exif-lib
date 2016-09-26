@@ -1,17 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExifLib", "ExifLib\ExifLib.csproj", "{4B695D0B-1FDF-4570-AD7A-6C431C55341B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B8A38ADD-6A70-4D2D-9464-5F996EF5A9AE}"
 	ProjectSection(SolutionItems) = preProject
-		..\scripts\BuildNewPackage-RanAutomatically.ps1 = ..\scripts\BuildNewPackage-RanAutomatically.ps1
-		..\scripts\New-NuGetPackage.ps1 = ..\scripts\New-NuGetPackage.ps1
-		..\scripts\NuGet.exe = ..\scripts\NuGet.exe
-		..\scripts\UploadPackage-RunManually.bat = ..\scripts\UploadPackage-RunManually.bat
-		..\scripts\UploadPackage-RunManually.ps1 = ..\scripts\UploadPackage-RunManually.ps1
+		..\.nuget\NuGet.Config = ..\.nuget\NuGet.Config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{9699386E-E303-4D71-9B6B-6F76524C12FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4287B22B-A6FF-47A6-BA9E-F6BB2C0AEC2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuspec", ".nuspec", "{A12BFE45-15FB-4EC5-A7F5-678882AB6852}"
+	ProjectSection(SolutionItems) = preProject
+		..\nuspec\ExifLib.nuspec = ..\nuspec\ExifLib.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".misc", ".misc", "{EEFAF56E-5EB6-4D27-807D-BC852505CC17}"
+	ProjectSection(SolutionItems) = preProject
+		..\settings.json = ..\settings.json
+		..\version.json = ..\version.json
 	EndProjectSection
 EndProject
 Global
@@ -27,5 +38,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B695D0B-1FDF-4570-AD7A-6C431C55341B} = {9699386E-E303-4D71-9B6B-6F76524C12FB}
 	EndGlobalSection
 EndGlobal
