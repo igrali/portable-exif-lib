@@ -13,7 +13,7 @@ namespace ExifLib
         public const int EXIF = 0xE1;
         public const int IPTC = 0xED;
     }
-    
+
     public enum ExifIFD
     {
         Exif = 0x8769,
@@ -43,7 +43,10 @@ namespace ExifLib
         Copyright = 0x8298,
         DateTimeOriginal = 0x9003,
         FlashUsed = 0x9209,
-        UserComment = 0x9286
+        UserComment = 0x9286,
+        CameraSerialNumber = 0xA431,
+        LensModel = 0xA434,
+        LensSerialNumber = 0xA435
     }
 
     public enum ExifGps
