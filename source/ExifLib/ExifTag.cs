@@ -195,8 +195,7 @@ namespace ExifLib
                     case ExifId.CameraSerialNumber: info.CameraSerialNumber = GetStringValue(); break;
                     case ExifId.LensModel: info.LensModel = GetStringValue(); break;
                     case ExifId.LensSerialNumber: info.LensSerialNumber = GetStringValue(); break;
-                    default:
-                        break;
+                    default: break;
                 }
             }
             else if (ifd == ExifIFD.Gps)
