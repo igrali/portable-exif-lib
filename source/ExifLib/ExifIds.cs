@@ -43,7 +43,8 @@ namespace ExifLib
         Copyright = 0x8298,
         DateTimeOriginal = 0x9003,
         FlashUsed = 0x9209,
-        UserComment = 0x9286
+        UserComment = 0x9286,
+        DigitalZoomRatio = 0xA404
     }
 
     public enum ExifGps
