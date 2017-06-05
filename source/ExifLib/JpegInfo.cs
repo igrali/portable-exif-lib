@@ -258,11 +258,38 @@ namespace ExifLib
             get;
             set;
         }
-        
+
         /// <summary>
         /// Time taken to load the image information.
         /// </summary>
         public TimeSpan LoadTime
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Serial number of the camera body.
+        /// </summary>
+        public string CameraSerialNumber
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Serial number of the lens used.
+        /// </summary>
+        public string LensSerialNumber
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Model name of the lens used.
+        /// </summary>
+        public string LensModel
         {
             get;
             set;
