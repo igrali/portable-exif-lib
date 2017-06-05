@@ -194,6 +194,15 @@ namespace ExifLib
         }
 
         /// <summary>
+        /// The digital zoom ratio. Has the value 0 when no zoom is used.
+        /// </summary>
+        public double DigitalZoomRatio
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Flash settings of the camera when the image was taken.
         /// </summary>
         public ExifFlash Flash
