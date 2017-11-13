@@ -194,6 +194,15 @@ namespace ExifLib
         }
 
         /// <summary>
+        /// The digital zoom ratio. Has the value 0 when no zoom is used.
+        /// </summary>
+        public double DigitalZoomRatio
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Flash settings of the camera when the image was taken.
         /// </summary>
         public ExifFlash Flash
@@ -258,11 +267,38 @@ namespace ExifLib
             get;
             set;
         }
-        
+
         /// <summary>
         /// Time taken to load the image information.
         /// </summary>
         public TimeSpan LoadTime
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Serial number of the camera body.
+        /// </summary>
+        public string CameraSerialNumber
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Serial number of the lens used.
+        /// </summary>
+        public string LensSerialNumber
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Model name of the lens used.
+        /// </summary>
+        public string LensModel
         {
             get;
             set;

@@ -8,7 +8,7 @@ namespace ExifLib
     /// </summary>
     public enum ExifTagFormat
     {
-        BYTE       = 1, 
+        BYTE       = 1,
         STRING     = 2,
         USHORT     = 3,
         ULONG      = 4,
@@ -191,7 +191,11 @@ namespace ExifLib
                     case ExifId.UserComment: info.UserComment = GetStringValue(); break;
                     case ExifId.ExposureTime: info.ExposureTime = GetNumericValue(0); break;
                     case ExifId.FNumber: info.FNumber = GetNumericValue(0); break;
+                    case ExifId.DigitalZoomRatio: info.DigitalZoomRatio = GetNumericValue(0); break;
                     case ExifId.FlashUsed: info.Flash = (ExifFlash)GetInt(0); break;
+                    case ExifId.CameraSerialNumber: info.CameraSerialNumber = GetStringValue(); break;
+                    case ExifId.LensModel: info.LensModel = GetStringValue(); break;
+                    case ExifId.LensSerialNumber: info.LensSerialNumber = GetStringValue(); break;
                     default: break;
                 }
             }
